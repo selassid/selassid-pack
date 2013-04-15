@@ -3,5 +3,6 @@
 
 (setq-default tab-width 4)
 (setq-default vc-follow-symlinks t)
+(setq-default show-trailing-whitespace t)
 (global-hl-line-mode t)
 (global-linum-mode t)
