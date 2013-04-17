@@ -7,4 +7,3 @@
 (live-load-config-file "bindings.el")
 
 (live-load-config-file "selassid-conf.el")
-(live-load-config-file "~/.emacslocalinit.el")
