@@ -5,3 +5,7 @@
 (setq-default vc-follow-symlinks t)
 (setq-default show-trailing-whitespace t)
 (global-hl-line-mode t)
+
+(defun insert-debug-statement
+  ()
+  (insert "import ipdb; ipdb.set_trace();"))
