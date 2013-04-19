@@ -11,3 +11,7 @@
              '("marmalade" .
                "http://marmalade-repo.org/packages/"))
 (package-initialize)
+
+(defun insert-debug-statement
+  ()
+  (insert "import ipdb; ipdb.set_trace();"))
