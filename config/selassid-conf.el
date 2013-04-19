@@ -15,3 +15,8 @@
 (defun insert-debug-statement
   ()
   (insert "import ipdb; ipdb.set_trace();"))
+
+(setq auto-mode-alist
+      (append
+       '(("COMMIT_EDITMSG$" . change-log-mode))
+       auto-mode-alist))
