@@ -5,3 +5,9 @@
 (setq-default vc-follow-symlinks t)
 (setq-default show-trailing-whitespace t)
 (global-hl-line-mode t)
+
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" .
+               "http://marmalade-repo.org/packages/"))
+(package-initialize)
