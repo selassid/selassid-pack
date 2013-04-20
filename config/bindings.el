@@ -8,4 +8,5 @@
 
 (define-key global-map (kbd "C-x C-d") 'insert-debug-statement)
 (define-key global-map (kbd "C-c C-c") 'comment-region)
-(define-key global-map (kbd "M-p") 'select-current-symbol)
+(define-key global-map (kbd "M-p") 'er/mark-symbol)
+(define-key global-map (kbd "M-o") 'er/mark-word)
