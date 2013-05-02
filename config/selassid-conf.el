@@ -4,6 +4,8 @@
 (setq-default tab-width 4)
 (setq-default vc-follow-symlinks t)
 (setq-default show-trailing-whitespace t)
+(setq-default whitespace-style
+              '(face trailing tabs lines space-mark tab-mark))
 (global-hl-line-mode t)
 
 (require 'package)
