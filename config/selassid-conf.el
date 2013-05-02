@@ -20,5 +20,5 @@
 
 (setq auto-mode-alist
       (append
-       '(("COMMIT_EDITMSG$" . change-log-mode))
+       '(("COMMIT_EDITMSG$" . text-mode))
        auto-mode-alist))
