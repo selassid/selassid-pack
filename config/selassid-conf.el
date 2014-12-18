@@ -6,6 +6,16 @@
 (setq-default tab-width 4)
 (setq-default vc-follow-symlinks t)
 (setq-default show-trailing-whitespace t)
+(add-hook
+ 'term-mode-hook
+ (lambda ()
+   (setq show-trailing-whitespace nil)
+   (setq yas-dont-activate t)))
+(add-hook
+ 'eshell-mode-hook
+ (lambda ()
+   (setq show-trailing-whitespace nil)))
+
 (setq-default whitespace-style
               '(face trailing tabs lines space-mark tab-mark))
 (global-hl-line-mode t)
