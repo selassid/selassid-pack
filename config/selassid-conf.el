@@ -1,6 +1,11 @@
 (defvar autosave-dir "~/.live-packs/.auto-save-files/")
 (defvar backup-dir "~/.live-packs/.backup-files/")
 
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+(package-initialize)
+
 (setq live-disable-zone t)
 
 (setq-default tab-width 4)
