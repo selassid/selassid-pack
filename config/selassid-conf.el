@@ -20,6 +20,8 @@
               '(face trailing tabs lines space-mark tab-mark))
 (global-hl-line-mode t)
 
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . css-mode))
+
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
 (setq mouse-wheel-progressive-speed nil)
 
